@@ -22,7 +22,6 @@ describe('Fetch recent questions (E2E)', () => {
   })
   test('[GET] /questions', async () => {
     const email = 'john.smith@examlpe.com'
-    const title = 'New Question'
 
     const user = await prisma.user.create({
       data: {
